@@ -1,12 +1,14 @@
 Create React App, TypeScript, Yarn Plug'n'Play, VS Code
 
 ```
+$ npx create-react-app your-project-name-here --use-pnp
+```
+
+```
 $ yarn add typescript
 ```
 
-VS Code
-
-To enable running NPM Scripts directly in VS Code's IDE, this should be in settings.json (in .vscode directory):
+To enable running NPM Scripts directly in VS Code, this should be in settings.json (in .vscode directory):
 
 ```
 {
@@ -20,10 +22,14 @@ Though running the start script from the VS Code's NPM Scripts panel is possible
 
 To fix that, add pnpify:
 
-\$ yarn add --dev @berry/pnpify
+````
+$ yarn add --dev @berry/pnpify
+```
 
 Then run this:
+```
+$ yarn pnpify --sdk
+```
 
-\$ yarn pnpify --sdk
-
-Then change the TypeScript version by pressing Command+Shift+P (from menu: View > Command Palette). Note, the active file must be a .tsx before pressing Command+Shift+P. Select **TypesScript: Select TypeScript version**, select **Use Workspace Version**
+Then change the TypeScript version by pressing Command+Shift+P (from menu: View > Command Palette). Note, the active file must be a .tsx file before pressing Command+Shift+P. Select **TypesScript: Select TypeScript version**, select **Use Workspace Version**
+````
