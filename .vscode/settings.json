@@ -1,0 +1,5 @@
+{
+    "npm.packageManager": "yarn",
+    "typescript.tsdk": ".vscode/pnpify/typescript/lib",
+    "eslint.nodePath": ".vscode/pnpify"
+}
